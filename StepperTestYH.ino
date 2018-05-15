@@ -38,18 +38,6 @@ void loop() {
     Serial.println("Single coil steps");
     myMotor->step(2000, FORWARD, SINGLE); 
     myMotor->step(2000, BACKWARD, SINGLE);
-    i=1;
+    i=0;
   } 
-
-  /*Serial.println("Double coil steps");
-  myMotor->step(100, FORWARD, DOUBLE); 
-  myMotor->step(100, BACKWARD, DOUBLE);
-  
-  Serial.println("Interleave coil steps");
-  myMotor->step(100, FORWARD, INTERLEAVE); 
-  myMotor->step(100, BACKWARD, INTERLEAVE); 
-  
-  Serial.println("Microstep steps");
-  myMotor->step(50, FORWARD, MICROSTEP); 
-  myMotor->step(50, BACKWARD, MICROSTEP);*/
-  }
+}
